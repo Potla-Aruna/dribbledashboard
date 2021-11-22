@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    background-color: #FFF0C4;
+}
+.container{
+    max-width: 1300px;
+    width:90%;
+    height:auto;
+    margin:auto;
+    margin-top: 10vh;
+    border-radius: 2.5rem;
+    background-color: #232946; 
+    margin-bottom: 10vh;  
+}
+.container .header{
+    display:flex;
+    align-items: center;
+    justify-content: center;   
+}
+.header .logo{
+    flex:1 1 18rem;
+    margin:2rem;
+    padding: 1rem; 
+    display: flex;  
+}
+.header .logo span{
+    font-size: 5rem;
+    color:#FFF;
+    margin-right: 1rem;
+    display: inline;      
+}
+.header .logo span i{
+    background-color: #F2C94C;
+    border-radius: 5px;
+}
+
+.header .logo .logo-title{
+    font-size: 2.5rem;
+    color: #FFF;
+    padding-left: 1rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+}
+.header .input{
+    flex:1 1 25rem;
+    margin-right: 35rem;
+}
+.header .input input{
+    background-color: aliceblue;
+    height: 4.5rem;
+    padding:1rem;
+    border-radius: 1rem;   
+}
+.header .msg {
+    margin-right: 10rem;
+    flex:1 1 13rem;
+
+}
+.header .msg span{
+    margin:0 1.2rem;
+    color:#FFF;
+    display: inline;
+}
+.header .msg span i{
+    font-size: 4rem;
+}
+.header .drop-down{
+margin-right: 2.5rem;
+}
+.header .drop-down select{
+    border: none;
+    font-size: 2.2rem;
+    color:#FFF;
+    background-color:#232946 ;
+}
+.header .drop-down span i{
+    font-size: 3rem;
+    padding: 1rem;
+    color:#FFF;   
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items:space-evenly;  
+    
+}
+.content .dashboard{
+    width:17%;
+    background-color: #232946;
+    height: auto;
+    color:#FFF; 
+    padding-top:2.7rem ;     
+}
+.content .dashboard .dashboard-item{
+    padding: 2rem;
+    margin:1rem 0 1rem 1rem;
+    font-size: 1.5rem;
+}
+.content .dashboard .dashboard-item h3{
+    display: inline;
+    margin-left:1.5rem;
+}
+.content .dashboard .dashboard-item:hover{
+    border-radius: 0.8rem;
+    background-color: #F19EA7;
+}
+.body{
+    width:75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border-radius: 1rem; 
+    margin-bottom: 2rem;  
+}
+.body .main{
+    width:70%; 
+    margin-top: 2rem;  
+}
+.body .main .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2C94C;
+    border-radius: 1.5rem;
+    height: auto;
+    width:100%;
+}
+.main .intro .intro-content{
+    width:60%;
+    font-size: 2rem;
+    margin:1rem;
+    text-align: center;   
+}
+.main .intro .intro-content .btn{
+    width:15rem;
+    padding: 1.5rem;
+    margin:1.5rem 0;
+    border:none;
+    border-radius: 0.5rem;
+    background-color: #232946;
+    color:white;
+    font-size: 1.6rem;
+}
+.main .intro .intro-image img{
+    object-fit: cover;
+    object-position: center;
+}
+.articles{
+    background-color: #F4F6FF;
+    border-radius: 1.2rem;
+    width:100%;
+
+}
+.articles .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1rem 1rem;
+    margin:1rem;  
+}
+.articles .heading h2{
+    font-size: 3rem;
+    margin-left:1rem;   
+}
+.articles .heading .calender{
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+.heading .calender select{
+    border:none;
+    background-color: #F4F6FF;   
+}
+.articles .articles-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1rem;   
+}
+.articles .articles-item p{
+    font-size: 1.5rem;
+    margin-right:1.5rem; 
+    margin-left: 1rem; 
+}
+.articles .articles-item .small img{
+    object-position: center;
+    object-fit: cover;
+    width:6rem;
+    height:6rem;
+    border-radius: 0.5rem;
+}
+.articles-item .small1 {
+    margin-left:1rem;
+    font-size: 1rem;
+    flex:1 1 20rem;
+    width:28%;
+}
+.articles-item .likes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:30%;
+    font-size: 2rem;
+    flex:1 1 10rem;
+}
+.articles-item .likes  p{
+    display: inline;
+}
+.articles-item .likes .icons i{
+    background-color: #F19EA7;
+    border-radius: 1rem;
+}
+.content .aside{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.aside .aside-box{
+    width:97%;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin:0.8rem 0;
+    margin-left: 1.2rem; 
+}
+.aside  .aside-box h2{
+    display: inline;
+}
+.aside  .aside-box i{
+    font-size: 3rem;
+    background-color: #232946;
+    border-radius: 1rem;
+    color: #FFF;
+    margin:0.5rem;   
+}
+.aside .box2{
+    background-color:#b5c0eb;
+}
+.aside .box1{
+    background-color:#BBEBEE;
+}
+.aside .box3{
+    background-color:#F19EA7;
+}
+ .content .aside .total{
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    margin:0.5rem 1rem; 
+    border: 2px solid #F8D6AC; 
+    border-radius: 1.5rem;
+    height: 50%;
+    width:97%;
+}
+ .content .aside .total .today1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #F8D6AC;
+height: 5rem;
+border-top-right-radius: 1.5rem;
+border-top-left-radius: 1.5rem;
+}
+.total .today1 h4{
+    font-weight: 400;
+    font-size: 1.5rem; 
+    line-height: 2rem;
+    padding-left: 1rem;
+    width:40%;   
+}
+.total .today1 .calender{
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    width:55%;  
+}
+.total .today1 .calender select{
+    border:none;
+    background-color: #F8D6AC;
+}
+.total .today2{
+    padding:1rem;
+    padding-bottom: 2rem;    
+}
+.total .today2 div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.total .today2 h4{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    display:inline;
+}
+.total .today2 p{
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
