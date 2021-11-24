@@ -405,6 +405,7 @@ border-top-left-radius: 1.5rem;
         width:90%;
         height:3rem;
         margin-top: 0;
+
     }
     .header .msg{
         flex:1 1 11rem;
@@ -453,12 +454,11 @@ border-top-left-radius: 1.5rem;
     .fa-times{
         transition: 0.5s ease-in-out;
         transform: rotate(180deg);
+        z-index: 99;
     }
     .content .dashboard .dashboard-item{
         width:50%;
         margin-left:1.5rem;
-        border-bottom: 3px solid #F19EA7;
-     
 
     }
     .content .body{
@@ -544,14 +544,102 @@ border-top-left-radius: 1.5rem;
     margin:1.5rem 1rem 1rem 1rem;
     margin-right: 1rem !important;  
 }
-
-
-
-
+}
+@media(min-width:769px) and (max-width:1193px){
+    .container{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    .container .header{
+        width:100%;
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        padding:0 1rem;
+        flex-wrap:nowrap;
+    }
+    .header .logo{
+      flex-basis: 15%; 
+    }
     
+    .header .msg{
+        flex-basis: 10%;
+        margin-right: 0 !important;
+    }
+    .header .input{
+        width:40%;
+        margin-right:0; 
+        margin-top: 2rem;
+        margin-left: 2rem;
+        position: fixed;
+        top:5vh;
+        left:4vw;
+        opacity:0;
+        transform-origin: top;
+        transform: scaleY(0);
+        z-index: 10;
+    }
+    .header #menu{
+        width:4rem;
+        display:block ;
+        cursor: pointer;
+       font-size: 2rem;
+        color: #fff;
+        margin-right:1rem;
+    }
+    .header .input input{
+        margin-left:2rem;
+    }
+    .content .dashboard{
+        position: fixed;
+        top:5vh;
+        left:3vw;
+        width:90vw;
+        margin:auto;
+        margin-left:2rem;
+        transform: scaleY(0);
+        padding-top:10rem;
+        transform-origin:top;
+        opacity: 0;
+        border-top-left-radius: 1.8rem;
+        border-top-right-radius: 1.8rem;
+    }
+    .content .dashboard .dashboard-item{
+        margin-left:2rem;
+
+    }
+    .content .dashboard.nav-toggle,.header .input.nav-toggle{
+        transform:scaleY(1);
+        opacity: 1;
+    }
+    .fa-times{
+        transition: 0.5s ease-in-out;
+        transform: rotate(180deg);
+        z-index: 99;
+    }
+    .content .body {
+        width:97%;
+
+    }
+     .body .main .intro .intro-content{
+         flex-basis: 40%;
+         width:fit-content;
+
+     }
+    .body .main .intro .intro-image{
+        flex-basis:50% ;
+        overflow: hidden;
+    }
+    .aside .total .today1 h4{
+        flex-basis: 30%;
+    }
+    .aside .total .today1 .calender{
+        flex-basis: 40%;
+        margin-right: 1rem;
+        overflow-x:hidden ;
+    }
 
 }
-
 
 
 
